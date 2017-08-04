@@ -23,11 +23,16 @@ labels = {
 name = raw_input('Name: ')  
 request = raw_input('Phone Number (p) or address (a)?')#查找电话或地址？
 
+key = request #输入的键p/a均不是
 if request == 'p':
     key = 'phone'
 if request == 'a':
     key = 'addr'  #使用正确的键
+    
+person = people.get(name, {})
+label = labels.get(key, key)
+result = person.get(key, 'not available')
 
 if name in people:
-    print "%s's %s is %s." % (name,labels[key],people[name][key])
+    print "%s's %s is %s." % (name, label, result)
     
