@@ -10,8 +10,10 @@ while 1:
         ind = "剪子"
     elif s == 3:
         ind = "布"
+        
     m = raw_input('输入 石头、剪子、布,输入"end"结束游戏:')
     blist = ['石头', "剪子", "布"]
+    
     if (m not in blist) and (m != 'end'):
         print "输入错误，请重新输入！"
     elif (m not in blist) and (m == 'end'):
