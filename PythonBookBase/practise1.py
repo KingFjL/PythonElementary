@@ -165,7 +165,78 @@ def main():
     database.close()
 
 
-if __name__ == '__main__': main() 
+if __name__ == '__main__': main()
+    
+    
+
+#寻找Email发信人
+#find_sender.py
+import fileinput, re
+
+
+pat = re.compile('From: (.*) <.*?>$')
+
+for line in fileinput.input():
+    m =pat.match(line)
+    if m: print m.group(1)
+
+
+
+
+
+#一个模板系统
+#templates.py
+import fileinput, re
+
+
+#匹配中括号里的字段：
+filed_input = re.compile(r'\[(.+?)\]')
+
+#收集变量
+scope = {}
+
+#用于re.sub中
+def replacement(match):
+    code = match.group(1)
+
+    try:
+        #如果字段可以求值，返回它：
+        return str(eval(code, scope))
+    except SyntaxError:
+        #否则执行相同作用域内的赋值语句.......
+        exec code in scope
+        # ...... 返回空字符串：
+        return ''
+
+#将所有文本以一个字符串的形式获取：
+lines =[]
+
+for line in fileinput.input():
+    lines.append(line)
+
+text = ''.join(lines)
+
+#将field模式的所有匹配项都替换掉：
+print field_pat.sub(replacement, text)
+
+
+
+
+
+
+#somescipt.py
+import sys
+
+
+text = sys.stdin.read()
+words = text.spilt()
+wordcount = len(words)
+
+print 'Wordcount:', wordcount
+
+
+
+
     
 
 
