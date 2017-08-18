@@ -235,39 +235,3 @@ wordcount = len(words)
 print 'Wordcount:', wordcount
 
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
