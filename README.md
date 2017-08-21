@@ -1,5 +1,8 @@
 # PythonElementary
+本仓库程序均采用Python2版本编写
+
 Python语言的基础知识程序编写
+
 文件夹介绍：
 
 （1）Codingame:Codingame网站上的游戏编程代码
