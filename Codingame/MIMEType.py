@@ -16,7 +16,8 @@ for i in xrange(q):
     fname = raw_input()  # One file name per line.
     if '.' in fname:
         fname = fname.split('.')[-1]
-        """分片操作：语法：str.split(str="",num=string.count(str))[n]
+        """
+        分片操作：语法：str.split(str="",num=string.count(str))[n]
         参数说明：
            str：   表示为分隔符，默认为空格，但是不能为空('')。若字符串中没有分隔符，则把整个字符串作为列表的一个元素
            num：表示分割次数。如果存在参数num，则仅分隔成 num+1 个子字符串，并且每一个子字符串可以赋给新的变量
