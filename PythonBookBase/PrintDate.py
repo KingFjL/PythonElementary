@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 months = [
          'January'
          'February'
@@ -23,6 +25,6 @@ month_number = int(month)
 day_number = int(day)
 
 month_name = months[month_number - 1]
-ordinal = day + endings[day_number - 1]#获取正确索引
+ordinal = day + endings[day_number - 1]#获取正确索引(索引地址从0开始)
 
 print month_name + ' ' + ordinal + ',' + year #输出结果      
