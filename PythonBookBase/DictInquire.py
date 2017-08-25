@@ -36,3 +36,8 @@ result = person.get(key, 'not available')
 if name in people:
     print "%s's %s is %s." % (name, label, result)
     
+
+    
+$ git add text/DictInquire.py
+$ git commit -m "DictInquire.py"
+$ git push origin master
