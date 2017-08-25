@@ -38,6 +38,3 @@ if name in people:
     
 
     
-$ git add text/DictInquire.py
-$ git commit -m "DictInquire.py"
-$ git push origin master
