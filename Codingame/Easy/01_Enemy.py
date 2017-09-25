@@ -1,5 +1,5 @@
 '''
-   消灭附近的敌人
+   
    Your program must destroy the enemy ships by shooting the closest enemy on each turn.
 '''
 
