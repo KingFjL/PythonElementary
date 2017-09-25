@@ -1,3 +1,8 @@
+'''
+    Your mission is to write a program that can display a line of text in ASCII art in a style you are given as input.
+'''
+
+
 import sys
 import math
 
