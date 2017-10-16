@@ -2,7 +2,7 @@
 
 
 '''
-启动子进程并等待其结束
+启动一个子进程并等待其结束
 '''
 
 from multiprocessing import Process
