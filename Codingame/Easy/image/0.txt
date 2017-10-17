@@ -1,7 +1,5 @@
 sdf
 玩蛇网有Python教程
 testclass 测试教程网
-v2ex 程序员光顾的讨论社区（有Python，模块）
-改简历，接口测试工作
 cousera
 edx
